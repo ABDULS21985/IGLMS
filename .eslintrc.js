@@ -10,6 +10,12 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
+
+  plugins: ["prettier"],
+  rules: {
+    "prettier/prettier": "error",
+  },
+
   root: true,
   env: {
     node: true,
@@ -24,8 +30,8 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "singleQuote": true,
-        "endOfLine": "lf",
+        singleQuote: true,
+        endOfLine: "lf",
       },
     ],
   },
